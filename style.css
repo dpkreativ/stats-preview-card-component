@@ -66,6 +66,7 @@ span {
 
 .main-heading {
   margin-bottom: 1.5rem;
+  color: var(--h-main);
 }
 
 .main-paragraph {
@@ -73,6 +74,7 @@ span {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
+  color: var(--p-main);
 }
 
 .accent {
@@ -90,12 +92,14 @@ span {
 .stat > h3 {
   font-family: "Inter", sans-serif;
   font-weight: 700px;
+  color: var(--h-stat);
 }
 
 .stat > p {
   font-size: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  color: var(--h-main);
 }
 
 .attribution {
