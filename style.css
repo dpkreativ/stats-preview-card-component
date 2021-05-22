@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bg-main: hsl(233, 47%, 7%);
+  --bg-card: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --h-main: hsl(0, 0%, 100%);
+  --h-stat: hsla(0, 0%, 100%, 0.6);
+  --p-main: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--p-main);
+  height: 100vh;
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: -1rem;
+}
+
+.card {
+  /* width: 100%; */
+  min-width: 6rem;
+  min-height: 2rem;
+  /* height: 100%; */
+  border-radius: 10px;
+  background-color: var(--bg-card);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
