@@ -109,3 +109,29 @@ span {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Bigger Screen sizes */
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 10rem;
+  }
+
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-box {
+    grid-column: 2 / end;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .content-box {
+    grid-row: 1 / end;
+    text-align: left;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
