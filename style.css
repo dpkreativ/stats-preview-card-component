@@ -33,7 +33,7 @@ span {
   display: grid;
   justify-items: center;
   align-items: center;
-  padding: 5rem 1rem;
+  padding: 8rem 1rem;
 }
 
 .card {
@@ -41,6 +41,7 @@ span {
   min-height: 2rem;
   height: 100%;
   width: 100%;
+  max-width: 360px;
   border-radius: 10px;
   background-color: var(--bg-card);
   display: grid;
@@ -93,6 +94,7 @@ span {
   font-family: "Inter", sans-serif;
   font-weight: 700px;
   color: var(--h-stat);
+  line-height: 2.5rem;
 }
 
 .stat > p {
@@ -111,13 +113,14 @@ span {
 }
 
 /* Bigger Screen sizes */
-@media screen and (min-width: 768px) {
-  .main {
+@media screen and (min-width: 1024px) {
+  /* .main {
     padding: 10rem;
-  }
+  } */
 
   .card {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
   }
 
   .image-box {
@@ -128,6 +131,7 @@ span {
   .content-box {
     grid-row: 1 / end;
     text-align: left;
+    padding: 4rem;
   }
 
   .stats {
