@@ -8,6 +8,8 @@
   --h-main: hsl(0, 0%, 100%);
   --h-stat: hsla(0, 0%, 100%, 0.6);
   --p-main: hsla(0, 0%, 100%, 0.75);
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Lexend Deca", sans-serif;
   font-size: 15px;
 }
 
@@ -25,7 +27,7 @@ body {
 
 h2,
 span {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-primary);
   font-size: 1.8rem;
 }
 
@@ -72,7 +74,7 @@ span {
 
 .main-paragraph {
   margin-bottom: 3rem;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--p-main);
@@ -92,16 +94,17 @@ span {
 }
 
 .stat > h3 {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 700px;
-  color: var(--h-stat);
+  color: var(--h-main);
   line-height: 2.5rem;
 }
 
 .stat > p {
   font-size: 0.5rem;
+  font-family: var(--font-primary);
   letter-spacing: 0.1rem;
-  color: var(--h-main);
+  color: var(--h-stat);
 }
 
 .attribution {
@@ -114,10 +117,6 @@ span {
 
 /* Bigger Screen sizes */
 @media screen and (min-width: 1024px) {
-  /* .main {
-    padding: 10rem;
-  } */
-
   .card {
     grid-template-columns: repeat(2, 1fr);
     max-width: 900px;
@@ -137,5 +136,11 @@ span {
   .stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat > p {
+    font-family: var(--font-secondary);
+    letter-spacing: 0.075rem;
+    transform: scaleY(1.1);
   }
 }
