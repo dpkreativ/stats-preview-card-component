@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to create color variables to be used throughout the project
+I learned how to create color/font variables to be used throughout the project
 
 ```css
 :root {
@@ -57,6 +57,8 @@ I learned how to create color variables to be used throughout the project
   --h-main: hsl(0, 0%, 100%);
   --h-stat: hsla(0, 0%, 100%, 0.6);
   --p-main: hsla(0, 0%, 100%, 0.75);
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Lexend Deca", sans-serif;
   font-size: 15px;
 }
 ```
