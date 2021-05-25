@@ -88,6 +88,7 @@ span {
 
 .stat {
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 .stat > h3 {
@@ -99,7 +100,6 @@ span {
 
 .stat > p {
   font-size: 0.5rem;
-  text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--h-main);
 }
