@@ -25,7 +25,7 @@ body {
   color: var(--p-main);
 }
 
-h2,
+h1,
 span {
   font-family: var(--font-primary);
   font-size: 1.8rem;
@@ -93,18 +93,20 @@ span {
   text-transform: uppercase;
 }
 
-.stat > h3 {
+.stat > p {
   font-family: var(--font-primary);
   font-weight: 700px;
   color: var(--h-main);
   line-height: 2.5rem;
+  font-weight: 700;
 }
 
-.stat > p {
+.stat > h2 {
   font-size: 0.5rem;
   font-family: var(--font-primary);
   letter-spacing: 0.1rem;
   color: var(--h-stat);
+  font-weight: 400;
 }
 
 .attribution {
@@ -138,7 +140,7 @@ span {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .stat > p {
+  .stat > h2 {
     font-family: var(--font-secondary);
     letter-spacing: 0.075rem;
     transform: scaleY(1.1);
